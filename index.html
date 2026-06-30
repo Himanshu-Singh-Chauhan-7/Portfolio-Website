@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Himanshu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/aboutme.html">About Me</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Himanshu</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Himanshu_Singh_Chauhan_Resume.pdf" target="_blank" class="btn">Download Resume/CV</a>
+                    <a href="https://github.com/Himanshu-Singh-Chauhan-7" target="_blank" class="btn">Visit GitHub</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="photo.png.jpeg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Developed by Himanshu</h3>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; himanshusportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Software Engineer', 'Data Analyst', 'Data Scientist'],
+            typeSpeed: 50,
+            backSpeed: 180,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
