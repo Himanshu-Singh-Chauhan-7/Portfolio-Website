@@ -155,6 +155,15 @@
                 <img id="lightbox-img" src="" alt="Enlarged screenshot">
             </div>
         </section>
+        <script>
+            function openLightbox(src) {
+                document.getElementById('lightbox-img').src = src;
+                document.getElementById('lightbox').classList.add('active');
+            }
+            function closeLightbox() {
+                document.getElementById('lightbox').classList.remove('active');
+            }
+        </script>
     </main>
     <footer>
         <div class="footer">
