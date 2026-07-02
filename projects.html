@@ -31,6 +31,7 @@
         <section class="projectsSection">
             <span class="text-gray">What I have built</span>
             <h1>Projects</h1>
+
             <div class="project-card project-card-wide">
                 <div class="project-thumb-grid">
                     <img src="Picture3.png.jpg" class="thumb" alt="F.A.S homepage" onclick="openLightbox(this.src)">
@@ -52,8 +53,7 @@
                         onclick="openLightbox(this.src)">
                     <img src="Picture7.png.jpg" class="thumb" alt="F.A.S homepage rating section"
                         onclick="openLightbox(this.src)">
-                    <img src="bg2.png.jpg" class="thumb" alt="F.A.S background"
-                        onclick="openLightbox(this.src)">
+                    <img src="bg2.png.jpg" class="thumb" alt="F.A.S background" onclick="openLightbox(this.src)">
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">Farming Assistant Web Service</h3>
@@ -105,23 +105,56 @@
                     </div>
                 </div>
             </div>
-            <!-- Lightbox overlay (add once, anywhere after the projects section) -->
+
+            <div class="project-card">
+                <div class="project-thumb-grid project-thumb-single">
+                    <img src="weather-project.png" class="thumb" alt="Weather app main screen"
+                        onclick="openLightbox(this.src)">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Weather Forecast App</h3>
+                    <p class="project-desc">
+                        Web Application | HTML, CSS, JavaScript, OpenWeatherMap API
+
+                        The Weather Forecast App is a clean, responsive web application that lets users search for any
+                        city and instantly view current weather conditions. It displays temperature, "feels like"
+                        value, and daily min/max readings, along with humidity, wind speed, atmospheric pressure,
+                        visibility, sunrise, and sunset times, all pulled live from a OpenWeatherMap API.
+
+                        The interface keeps a history of recently searched cities for quick access, and includes a
+                        toggle for switching between Celsius and Fahrenheit. A soft, sky-themed background paired with
+                        a frosted-glass results card gives the app a polished, weather-appropriate look and feel.
+
+                        Key Features
+                        Live city search with current weather data
+                        Temperature, feels-like, and min/max display
+                        Humidity, wind, pressure, and visibility stats
+                        Sunrise and sunset times
+                        Recent search history
+                        Celsius/Fahrenheit unit toggle
+                        Technologies Used
+                        Frontend: HTML5, CSS3, JavaScript
+                        API: OpenWeatherMap API integration
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">OpenWeatherMap API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Himanshu-Singh-Chauhan-7/Weather-Forecast.git" target="_blank"
+                            class="btn">Click here to Open the GitHub Repository of the Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox overlay (shared by all project cards) -->
             <div id="lightbox" class="lightbox" onclick="closeLightbox()">
                 <span class="lightbox-close">&times;</span>
                 <img id="lightbox-img" src="" alt="Enlarged screenshot">
             </div>
-            </div>
         </section>
-
-        <script>
-            function openLightbox(src) {
-                document.getElementById('lightbox-img').src = src;
-                document.getElementById('lightbox').classList.add('active');
-            }
-            function closeLightbox() {
-                document.getElementById('lightbox').classList.remove('active');
-            }
-        </script>
     </main>
     <footer>
         <div class="footer">
